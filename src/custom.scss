@@ -1,0 +1,32 @@
+@import "mixins.scss";
+
+//CODE STARTS
+
+.baseBtn {
+    @include border-radius(100px !important);
+    letter-spacing: 1px !important;
+    text-transform: inherit !important;
+}
+.post_story_btn {
+    height: 34px;
+}
+.customInput {
+    margin-left: 6px;
+    .MuiFormControl-fullWidth {
+        .MuiInput-underline {
+            &:before,&:after {
+                border-bottom: 0px !important;
+            }
+        }
+    }
+}
+.customIcons {
+    svg{border: 1.7px solid; @include border-radius(100px)}
+}
+.sendButton{
+    background:#f95665 !important;
+    color:#fff !important;
+    padding:10px !important;
+    width: 40px;
+    height: 40px;
+}
