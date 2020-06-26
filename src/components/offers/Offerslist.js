@@ -83,9 +83,9 @@ render() {
     <Container maxWidth="xl">
     <Grid container spacing={2} >
     
-      <Grid item xs={12} sm={12} md={9}>
+      <Grid item xs={12} sm={12} md={12}>
       <Paper className="m-t-10 m-b-10">
-      <Box p={5}><Link href="/offers-form">Add Rewards / Deals</Link></Box>
+      <Box p={5} textAlign="right"><Button href="/offers-form" variant="contained" color="primary" className="baseBtn p-r-15 p-l-15" disableElevation>Add Rewards / Deals</Button></Box>
       <TableContainer component={Paper}>
       <Table aria-label="simple table">
       <TableHead>
