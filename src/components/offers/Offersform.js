@@ -152,11 +152,13 @@ const classes = useStyles();
                         <Grid item xs={6} sm={12} md={6} spacing={2}> <FormControl component="fieldset" fullWidth>
                         <TextField fullWidth id="standard-basic" type="file" label="Upload image file" /> </FormControl>
                         </Grid>
-                      <Grid item xs={6} sm={12} md={6} spacing={2}> <FormControl component="fieldset" fullWidth>
-                      <TextField fullWidth id="standard-basic" label="Rewards / Deals description" /> </FormControl>
+                      <Grid item xs={6} sm={12} md={6} spacing={2}> <FormControl component="fieldset" fullWidth >
+                      <TextareaAutosize aria-label="minimum height" rowsMin={3} placeholder="Rewards / Deals description" />
+                      </FormControl>
                       </Grid>
                         <Grid item xs={6} sm={12} md={6} spacing={2}> <FormControl component="fieldset" fullWidth>
-                        <TextField fullWidth id="standard-basic" label="Terms and conditions" /> </FormControl>
+                        <TextareaAutosize aria-label="minimum height" rowsMin={3} placeholder="Terms and condition" />
+                        </FormControl>
                         </Grid>
                         </Grid>
                       </Box>

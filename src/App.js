@@ -7,7 +7,7 @@ import Offers from './components/offers/Offers'
 import OffersForm from './components/offers/Offersform'
 import Offerslist from './components/offers/Offerslist'
 import Profile from './components/users/Profile'
-
+import JobProfile from './components/job_portal/Job_Profile'
 
 
 class App extends Component {
@@ -23,6 +23,7 @@ class App extends Component {
             <Route exact path="/offers-form" component={OffersForm} />
             <Route exact path="/offers-list" component={Offerslist} />
              <Route exact path="/profile" component={Profile} />
+             <Route exact path="/job-profile" component={JobProfile} />             
           </div>
         </div>
       </Router>
