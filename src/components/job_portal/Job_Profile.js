@@ -26,18 +26,19 @@ import Collapse from '@material-ui/core/Collapse'
 import CardActions from '@material-ui/core/CardActions'
 import clsx from 'clsx'
 import Typography from '@material-ui/core/Typography'
-import CardContent from '@material-ui/core/CardContent';
-import DeleteIcon from '@material-ui/icons/Delete';
-import CloudUploadIcon from '@material-ui/icons/CloudUpload';
-import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
-import Icon from '@material-ui/core/Icon';
-import SaveIcon from '@material-ui/icons/Save';
-import AddIcon from '@material-ui/icons/Add';
-import CheckIcon from '@material-ui/icons/Check';
-import EditIcon from '@material-ui/icons/Edit';
-import EditRoundedIcon from '@material-ui/icons/EditRounded';
-import AddRoundedIcon from '@material-ui/icons/AddRounded';
-import LocationCityRoundedIcon from '@material-ui/icons/LocationCityRounded';
+import CardContent from '@material-ui/core/CardContent'
+import DeleteIcon from '@material-ui/icons/Delete'
+import CloudUploadIcon from '@material-ui/icons/CloudUpload'
+import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice'
+import Icon from '@material-ui/core/Icon'
+import SaveIcon from '@material-ui/icons/Save'
+import AddIcon from '@material-ui/icons/Add'
+import CheckIcon from '@material-ui/icons/Check'
+import EditIcon from '@material-ui/icons/Edit'
+import EditRoundedIcon from '@material-ui/icons/EditRounded'
+import AddRoundedIcon from '@material-ui/icons/AddRounded'
+import LocationCityRoundedIcon from '@material-ui/icons/LocationCityRounded'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -151,6 +152,7 @@ function JobProfile() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   }
+    
   return (
     <div className="App">
     <MyHeader />      
@@ -174,7 +176,9 @@ function JobProfile() {
                     <Box textAlign="center" fontSize={12} mb={2} letterSpacing={1} color="text.secondary">Connections</Box>
                   </Box>
                   <Box alignItems="center" justifyContent="center" flexGrow={1} borderRight={1} className={classes.customBorder}>
-                    <Box textAlign="center" fontSize={12} mb={2} letterSpacing={1} color="text.secondary"><Link>Contact info</Link></Box>
+                    <Box textAlign="center" fontSize={12} mb={2} letterSpacing={1} color="text.secondary">
+                    <Link >Contact info</Link>
+                    </Box>
                   </Box>
                   <Box alignItems="center" justifyContent="center" textAlign="center" flexGrow={1}>
                     <Box textAlign="center" fontSize={32} color="secondary.main" fontWeight="fontWeightBold">28</Box>
